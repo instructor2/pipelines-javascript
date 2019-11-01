@@ -42,3 +42,11 @@ steps:
     vstsFeedPackagePublish: 'universaldemo'
     versionOption: 'minor'
 
+- task: AzSKSVTs@4
+  inputs:
+    ConnectedServiceNameARM: 'Pay-As-You-Go2(37a253d6-5575-4699-9039-e00de6d32fcf)'
+    GenerateMethodParameterSetSelection: 'ResourceGroupName'
+    ResourceGroupName: 'policyDemo'
+    SubscriptionId: '37a253d6-5575-4699-9039-e00de6d32fcf'
+    EnableGSSscan: true
+    EnableOMSLogging: false
