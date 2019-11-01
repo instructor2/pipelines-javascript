@@ -41,3 +41,10 @@ steps:
     vstsFeedPublish: '3bcfcc00-20ec-474d-bc9a-769d5d234859'
     vstsFeedPackagePublish: 'universaldemo'
     versionOption: 'minor'
+
+- task: AzSKSVTs@4
+  inputs:
+    ConnectedServiceNameARM: 'Pay-As-You-Go2(37a253d6-5575-4699-9039-e00de6d32fcf)'
+    GenerateMethodParameterSetSelection: 'ResourceGroupName'
+    ResourceGroupName: 'demoVM'
+    SubscriptionId: '37a253d6-5575-4699-9039-e00de6d32fcf'
